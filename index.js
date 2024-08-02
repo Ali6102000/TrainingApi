@@ -1,6 +1,8 @@
 const express = require("express");
 const xlsx= require("xlsx");
+const cors = require("cors");
 const app = express();
+app.use(cors())
 
 //require('dotenv').config()
 const PORT = process.env.PORT || 3030;
